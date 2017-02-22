@@ -32,7 +32,7 @@
     "fontSwatch": {
        "title": "Karla / Georgia",
         "font1": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "54px",
@@ -40,7 +40,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "36px",
@@ -48,7 +48,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "22px",
             "font-weight": "700",
             "line-height": "42px",
@@ -56,7 +56,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "36px",
@@ -72,7 +72,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "26px",
