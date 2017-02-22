@@ -1,0 +1,21 @@
+
+<!-- Header -->
+<header class="template-header">
+    <div class="container">
+        <div class="flex-item">
+            <div class="widget-profile-header">
+                {{widget('clicktocall', 'clicktocalldefault', {})|raw}}
+            </div>
+        </div>
+        <div class="flex-item">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {
+            "business": "profile",
+            "showTplWidget":"0"
+            })|raw}}
+        </div>
+        <div class="flex-item">
+            {{widget('profile', 'header-profile2', { 'profileType':'socialicons' })|raw}}
+        </div>
+    </div>
+</header>

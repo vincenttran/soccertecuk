@@ -1,0 +1,212 @@
+// ------------------------------------------------
+// The Croft Template: CSS > Widgets > Contact Form
+// ------------------------------------------------
+
+
+
+
+// Fieldset
+// ------------------------------
+
+
+.contactform__fieldset {
+	position: relative;
+    margin-top: 50px;
+}
+
+
+
+
+// Form Group
+// ------------------------------
+
+
+.contactform__form-group {
+	margin-bottom: 26px;
+    text-align: right;
+
+	@media @bp-global-small {
+		margin-bottom: 16px;
+	}
+
+
+	&:last-of-type {
+		margin-bottom: 0;
+	}
+
+}
+
+
+
+
+// Form Body
+// ------------------------------
+
+
+.contactform__form-body {
+	width: 50%;
+	margin: 0 auto;
+	background-color: #f5f5f5;
+	padding: 60px 40px 40px 40px;
+
+    @media @bp-global-small {
+        padding: 60px 40px 30px 40px;
+        width: 100%;
+    }
+}
+
+
+
+
+// Legend
+// ------------------------------
+
+
+.contactform__legend {
+	position: absolute;
+	top: 0;
+    right: 50%;
+    left: 28%;
+	color: @color__form-legend--text;
+	background-color: @color__form-legend--background;
+	width: 70px;
+    height: 60px;
+	font-family: @font__h2--font-family;
+	font-size: @font__h2--font-size;
+	line-height: @font__h2--line-height;
+	text-align: right;
+    text-align: center;
+    margin-top: -30px;
+    line-height: 60px;
+    -webkit-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+    box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+    text-indent: -9999px;
+    &:before {
+        content:"\f003";
+        width: 100%;
+        height: 25px;
+        font-family: 'FontAwesome', sans-serif;
+        display: block;
+        position: absolute;
+        top: 0px;
+        font-size: 16px;
+        font-weight: bold;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        color: white;
+        text-indent: 0;
+    }
+    @media @tablet {
+        left: 6%;
+    }
+    @media @mobile {
+        left: 6%;
+        width: 50px;
+        height: 50px;
+        margin-top: -25px;
+        line-height: 50px;
+    }
+}
+
+
+
+
+// Label
+// ------------------------------
+
+
+
+
+.contactform__label {
+    display: none;
+}
+
+.label--message {
+	 @media @mobile {
+        font-size: bkscale(@font__p--font-size, 0.9);
+    }
+}
+
+
+
+
+// Input and Textarea
+// ------------------------------
+
+
+.contactform__input,
+.contactform__textarea {
+    background-color: white;
+    border-bottom: 0;
+    padding: 10px;
+    -webkit-box-shadow:inset 0 0 10px #DEDDDD;
+   -moz-box-shadow:inset 3px 3px 3px #DEDDDD;
+    box-shadow:inset 3px 3px 3px #DEDDDD;
+    border: 1px solid #F3F1F1;
+    &:focus {
+        border-color: #DEDDDD;
+        box-shadow: none;
+    }
+}
+
+
+// Button
+// ---------------------
+
+.contactform__button {
+    text-align: center;
+}
+
+
+
+
+
+// ---------------------------------
+// Columns variations
+// ---------------------------------
+
+
+.responsivecolumns {
+
+	// Legend
+	.contactform__legend {
+        left: 20px;
+	}
+
+	// Form Body
+	.contactform__form-body {
+		float: none;
+		width: auto;
+		padding: 0;
+        width: 100%;
+        padding: 50px 20px 20px 20px;
+	}
+
+	.contactform__form-group {
+		margin-bottom: 16px;
+	}
+
+    // 4 columns
+    // ------------------------------
+
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth,
+    .columns-three-left,
+    .columns-three-right,
+    .columns-three-middle {
+    
+        // Legend
+    
+        .legend {
+            left: 6%;
+            width: 50px;
+            height: 50px;
+            margin-top: -25px;
+            line-height: 50px;
+        }
+    }
+}
+

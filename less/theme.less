@@ -1,0 +1,472 @@
+// -------------------------------------
+// The Croft Template: LESS > Theme
+// -------------------------------------
+
+
+
+// ------------------------------
+// #Table of Contents
+// ------------------------------
+
+//  #Global Breakpoints
+//  #Site Styles
+//  #Page Styles
+//  #Page Default
+//  #Header
+//  #Footer
+
+
+
+
+// ------------------------------
+// #Global Breakpoints
+// ------------------------------
+
+// Page is contained and centered
+@bp-global-above-fullwidth: ~"only screen and (min-width: 1800px)";
+
+// Page displayed full width
+@bp-global-below-fullwidth: ~"only screen and (max-width: 1800px)";
+
+@bp-global-large: 	~"only screen and (min-width: 1400px)";
+@bp-global-medium: 	~"only screen and (min-width: 770px) and (max-width: 1400px)";
+@bp-global-small: 	~"only screen and (max-width: 769px)";
+@mobile: ~"only screen and (max-width: 650px)";
+
+// When specific styles for responsive columns styles are applied
+@bp-global-columns: ~"only screen and (min-width: 478px)";
+
+
+
+// ------------------------------
+// Site Styles
+// ------------------------------
+
+
+body {
+    background-color: @color__body--background;
+}
+
+.container {
+    width: 100%;
+}
+
+.page--home {
+    margin-bottom: 60px;
+    position: relative;
+}
+
+// Site Container
+.site-container {
+    width: 100%;
+    .flex-display;
+    .flex-direction(column);
+    height: 100%;
+    min-height: 100vh;
+    background-color: @color__container--background;
+    overflow: hidden;
+
+    @media @bp-global-above-fullwidth {
+        width: 90%;
+        max-width: @value__container--width;
+        margin: 0 auto;
+    }
+    @media @mobile {
+        display: block;
+        min-height: inherit;
+    }
+}
+
+// Main
+.main-content {
+    position: relative;
+    z-index: 50;
+    background-color: @color__container--background;
+    .widget:first-child {
+        margin-bottom: 30px;
+    }
+}
+
+
+.main-content .homepage-nav .widget:first-child {
+    margin-bottom: 0px!important;
+}
+
+
+// Default Page Main
+.page--default {
+    .main-content {
+        position: relative;
+        z-index: 50;
+        background-color: @color__container--background;
+        .widget:first-child {
+            margin: 0;
+        }
+    }
+}
+
+
+// ------------------------------
+// Page Styles
+// ------------------------------
+
+
+// Page Title
+.pagetitle {
+    padding: 6px 70px;
+    background-color: darken(@color__container--background, 4%);
+    border-bottom: 1px solid darken(@color__container--background, 10%);
+    text-align: center;
+
+    @media @bp-global-medium {
+        padding: 6px 40px;
+    }
+    @media @bp-global-small {
+        padding: 6px 20px;
+    }
+}
+
+// Page Title Text
+.pagetitle-text {
+    padding-bottom: 0;
+    .heading--4;
+
+    @media @mobile {
+        font-size: bkscale(@font__h4--font-size, 0.7);
+        line-height: bkscale(@font__h4--line-height, 0.7);
+        text-align: center;
+    }
+}
+
+
+
+
+// ------------------------------
+// #Page Default
+// ------------------------------
+
+.page--default {
+    margin-bottom: 40px;
+    .template-header {
+        background-color: @color__footer--background;
+        position: relative;
+        .flex-item:first-child {
+            width: 33.33%;
+            @media @mobile {
+                width: 50%;
+            }
+        }
+        .profile {
+            .button {
+                top: 0;
+                @media @tablet {
+                    line-height: 40px;
+                }
+            }
+            .input {
+                color: @color__container--background;
+            }
+        }
+        .company-link {
+            color: @font-swatch10-color;
+        }
+        .container {
+            @media @tablet {
+                padding: 0;
+            }
+        }
+        .widget__logo {
+            margin: 10px!important;
+        }
+    }
+}
+
+
+
+
+// ------------------------------
+// #Header
+// ------------------------------
+
+[data-widget-type="feature"] + .template-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+.template-header,
+[data-widget-type="feature"].bk-tpl-hidden +.template-header {
+    background-color: @color__footer--background;
+    position: relative;
+    max-width: @value__container--width;
+    padding: 20px 10px 20px 20px;
+    width: 100%;
+
+    @media @bp-global-below-fullwidth {
+        width: 100%;
+    }
+    @media @bp-global-medium {
+        padding: 30px 40px;
+    }
+    @media @tablet {
+        border: 0;
+    }
+    @media @mobile {
+        order: 1;
+        padding: 20px 10px 10px 0px;
+    }
+
+
+    // Container
+	.container {
+		.flex-display;
+		.justify-content(space-between);
+        .align-items(center);
+        height: 100%;
+
+        @media @mobile {
+            display: block;
+        }
+	}
+
+    // Flex Item
+    .flex-item {
+        width: 33.333%;
+
+        &:first-child,
+        &:last-child {
+            .align-self(flex-start);
+        }
+
+        &:last-child {
+            text-align: right;
+        }
+
+        @media @tablet {
+            background-color: transparent;
+            border: 0;
+
+            &:first-child,
+            &:last-child {
+                @media @medium {
+                    width: 50%;
+                }
+            }
+        }
+        @media @mobile {
+            width: 100%;
+
+            &:first-child {
+                .flex-display;
+                .flex-direction(column);
+                .justify-content(center);
+                width: 50%;
+                padding: 0;
+                min-height: 43px;
+            }
+            &:last-child {
+                position: absolute;
+                top: 21px;
+                right: 5px;
+                width: 50%;
+            }
+        }
+    }
+}
+
+
+// Hiding Feature Styles
+// ----------------------------------------
+
+
+.page--home [data-widget-type="feature"] + .template-header + .hero-logo {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 10001;
+    padding: 20px;
+    width: 100%;
+    min-height: 200px;
+    height: 50%;
+    .flex-display;
+    .flex-direction(column);
+    .justify-content(center);
+    @media @tablet {
+        max-width: 60%;
+    }
+    @media @mobile {
+        top: 20%;
+        max-width: 80%;
+    }
+}
+
+
+[data-widget-type="feature"] + .template-header {
+    background-color: transparent;
+}
+
+
+[data-widget-type="feature"].bk-tpl-hidden + .template-header,
+.template-header {
+    position: relative;
+}
+
+
+
+
+
+// ------------------------------
+// #Footer
+// ------------------------------
+
+.contact-footer-title {
+    display: block;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+    top: -28px;
+    z-index: 9999;
+    h1, h2, h3, h4, h5, p, a {
+        display: inline-block;
+        color: @color__form-legend--text;
+        background-color: @color__form-legend--background;
+        right: auto;
+        padding: 10px;
+        margin: 0px auto;
+        -webkit-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+        -moz-box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+        box-shadow: 5px 5px 1px 0px rgba(0,0,0,0.05);
+    }
+}
+
+.footer-container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 10px 20px 40px 20px;
+    .flex-display;
+    .flex-direction(row);
+    .justify-content(center);
+    @media @tablet {
+        max-width: 100%;
+    }
+    @media @mobile {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.contact-footer {
+    background-color: #F1EFEF;
+    padding: 0;
+    .flex-item-50 {
+        &:first-child {
+            -webkit-box-ordinal-group: 1;
+            -moz-box-ordinal-group: 1;
+            -webkit-order: 0;
+            -ms-flex-order: 0;
+            order: 0;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+            margin-right: 30px;
+            width: 100%;
+            @media @mobile {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+        &:last-child {
+            -webkit-box-ordinal-group: 2;
+            -moz-box-ordinal-group: 2;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+            -ms-flex: 1 1 auto;
+            flex: 1 1 auto;
+            -webkit-align-self: auto;
+            -ms-flex-item-align: auto;
+            align-self: auto;
+            width: 100%;
+        }
+    }
+    .contactform__legend {
+        position: relative;
+        color: @color__h2--text;
+        font-weight: @font__h2--font-weight;
+        background-color: transparent;
+        text-align: left;
+        padding: 0;
+        margin-bottom: 10px;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: @font__h2--font-family;
+        font-size: @font__h2--font-size;
+        margin-top: 0px;
+        box-shadow: none;
+        text-indent: 0;
+        line-height: 32px;
+        &:before {
+            display: none;
+        }
+    }
+    .contactform__form-body {
+        padding: 0;
+        width: 100%;
+    }
+    .contactform__fieldset {
+        margin-top: 0;
+    }
+    .contactform__form-group {
+        text-align: left;
+    }
+}
+
+.footer-content-1 {
+    margin-bottom: 10px;
+}
+
+.template-footer {
+    width: 100%;
+    background-color: @color__footer--background;
+    text-align: center;
+
+    .social-item {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    // Widget
+    .widget {
+        @media @bp-global-large {
+            padding: 20px 70px;
+        }
+        @media @bp-global-medium {
+            padding: 20px 40px;
+        }
+        @media @bp-global-small {
+            padding: 20px 20px;
+        }
+    }
+}
+
+// Fixes overlay issue in the editor when trying to edit the content widget above the footer.
+
+.footer-container .widget-overlay {
+    z-index: 999;
+}
