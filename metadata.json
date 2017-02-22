@@ -21,9 +21,9 @@
     {
         "Swatch 1": {
             "color1":"#ffffff",
-            "color2":"#a10303",
+            "color2":"#84aee0",
             "color3":"#000000",
-            "color4":"#000000",
+            "color4":"#091432",
             "color5":"#424D51",
             "color6":"#ffffff",
             "color7":"#9AA7B5"
@@ -32,47 +32,47 @@
     "fontSwatch": {
        "title": "Karla / Georgia",
         "font1": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "32px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "54px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "24px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "22px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "42px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "20px",
-            "font-weight": "300",
+            "font-weight": "700",
             "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font5": {
             "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
-            "font-size": "18px",
+            "font-size": "20px",
             "font-weight": "400",
             "line-height": "27px",
             "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "26px",
