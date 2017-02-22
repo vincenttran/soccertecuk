@@ -32,7 +32,7 @@
     "fontSwatch": {
        "title": "Karla / Georgia",
         "font1": {
-            "font-family": "\"Droid Serif\", Georgia, serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "32px",
             "font-weight": "300",
             "line-height": "54px",
@@ -40,7 +40,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Droid Serif\", Georgia, serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "24px",
             "font-weight": "300",
             "line-height": "36px",
@@ -48,7 +48,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Droid Serif\", Georgia, serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "22px",
             "font-weight": "300",
             "line-height": "42px",
@@ -56,7 +56,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Droid Serif\", Georgia, serif",
+            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
             "font-size": "20px",
             "font-weight": "300",
             "line-height": "36px",
@@ -64,7 +64,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Georgia\", serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "18px",
             "font-weight": "400",
             "line-height": "27px",
@@ -101,7 +101,7 @@
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Georgia\", serif",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "12px",
             "font-weight": "400",
             "line-height": "24px",
@@ -109,7 +109,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Oswald\", Arial, sans-serif",
+            "font-family": "\"Orbitron\", sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "32px",
