@@ -152,6 +152,12 @@ body {
         background-color: @color__footer--background;
         position: relative;
         padding-top: 30px;
+        @media @tablet {
+            padding: 50px 10px 30px;
+        }
+        @media @mobile {
+                padding: 15px 0 30px 0;
+        }
         .flex-item:first-child {
             width: 33.33%;
             @media @mobile {
@@ -178,6 +184,14 @@ body {
             margin: 10px!important;
         }
     }
+}
+
+.page--default {
+.template-header .flex-item:nth-child(2) {
+    @media @mobile {
+        padding: 10px;
+    }
+}
 }
 
 
@@ -447,7 +461,7 @@ body {
 
 .template-footer {
     width: 100%;
-    background-color: @color__footer--background;
+    background-color: #232323;
     text-align: center;
 
     .social-item {
