@@ -20,10 +20,10 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
+            "color1":"#000000",
             "color2":"#84aee0",
             "color3":"#000000",
-            "color4":"#091432",
+            "color4":"#ffffff",
             "color5":"#424D51",
             "color6":"#ffffff",
             "color7":"#9AA7B5"
@@ -32,7 +32,7 @@
     "fontSwatch": {
        "title": "Karla / Georgia",
         "font1": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "32px",
             "font-weight": "700",
             "line-height": "54px",
@@ -40,7 +40,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "24px",
             "font-weight": "700",
             "line-height": "36px",
@@ -48,7 +48,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "22px",
             "font-weight": "700",
             "line-height": "42px",
@@ -56,7 +56,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "20px",
             "font-weight": "700",
             "line-height": "36px",
@@ -72,7 +72,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
             "font-weight": "300",
             "line-height": "26px",
@@ -83,9 +83,9 @@
             "background-color-hover": "darken(@color-swatch3,8%)"
         },
         "font7": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "18px",
-            "font-weight": "300",
+            "font-weight": "400",
             "line-height": "27px",
             "color": "@color-swatch3",
             "letter-spacing": "1px",
@@ -93,7 +93,7 @@
             "background-color-hover": "darken(@color-swatch3,5%)"
         },
         "font8": {
-            "font-family": "\"Karla\", Verdana, Geneva, sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "16px",
             "font-weight": "700",
             "line-height": "24px",
@@ -109,7 +109,7 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Orbitron\", sans-serif",
+            "font-family": "\"Oswald\", Arial, sans-serif",
             "font-size": "26px",
             "font-weight": "700",
             "line-height": "32px",
@@ -123,8 +123,8 @@
             "color__secondary": "#a10303"
         },
         "site": {
-            "color__body--background": "#e0e0e0",
-            "color__container--background": "#fff",
+            "color__body--background": "#000",
+            "color__container--background": "#000",
             "color__link--text": "black",
             "font__companyname--font-family": "@font-swatch10-font-family",
             "font__companyname--font-size": "26px",
@@ -139,31 +139,31 @@
             "font__h1--font-weight": "@font-swatch1-font-weight",
             "font__h1--line-height": "44px",
             "font__h1--letter-spacing": "@font-swatch1-letter-spacing",
-            "color__h1--text": "black",
+            "color__h1--text": "#fff",
             "font__h2--font-family" : "@font-swatch2-font-family",
             "font__h2--font-size" : "@font-swatch2-font-size",
             "font__h2--font-weight" : "@font-swatch2-font-weight",
             "font__h2--line-height" : "@font-swatch2-line-height",
             "font__h2--letter-spacing" : "inherit",
-            "color__h2--text": "black",
+            "color__h2--text": "#fff",
             "font__h3--font-family" : "@font-swatch3-font-family",
             "font__h3--font-size" : "22px",
             "font__h3--font-weight" : "@font-swatch3-font-weight",
             "font__h3--line-height" : "34px",
             "font__h3--letter-spacing" : "inherit",
-            "color__h3--text": "black",
+            "color__h3--text": "#fff",
             "font__h4--font-family" : "@font-swatch4-font-family",
             "font__h4--font-size" : "@font-swatch4-font-size",
             "font__h4--font-weight" : "@font-swatch4-font-weight",
             "font__h4--line-height" : "@font-swatch4-line-height",
             "font__h4--letter-spacing" : "@font-swatch4-letter-spacing",
-            "color__h4--text": "black",
+            "color__h4--text": "#fff",
             "font__p--font-family" : "@font-swatch5-font-family",
             "font__p--font-size" : "15px",
             "font__p--font-weight" : "400",
             "font__p--line-height" : "30px",
             "font__p--letter-spacing" : "@font-swatch5-letter-spacing",
-            "color__p--text": "#747682"
+            "color__p--text": "#fff"
         },
         "header": {
             "color__header--background" : "transparent"
