@@ -169,7 +169,7 @@
             "color__header--background" : "transparent"
         },
         "footer": {
-            "color__footer--background" : "#000000"
+            "color__footer--background" : "#232323"
         },
         "navigation": {
             "font__navigation--font-family": "@font-swatch6-font-family",
