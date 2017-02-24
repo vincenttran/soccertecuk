@@ -59,7 +59,6 @@
     margin: 0;
 
     @media @tablet {
-        white-space: nowrap;
         -webkit-overflow-scrolling: touch;
         -ms-overflow-style: -ms-autohiding-scrollbar;
     }
@@ -278,3 +277,108 @@
     }
 }
 
+
+// Burger Icon
+// -------------
+
+.navigation-toggle {
+    display: none;
+}
+
+@media @tablet {
+    .navigation-toggle {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        height: 45px;
+        text-indent: -1000px;
+        line-height: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        outline: 0;
+        border: 0;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 3px;
+            top: 0;
+            left: 50%;
+            right: 0;
+            margin-top: 15px;
+            margin-left: -13px;
+            background: white;
+            box-shadow: 0 6px 0 white;
+            .transition( all, 0.5s, ease );
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            width: 26px;
+            height: 3px;
+            top: 12px;
+            left: 50%;
+            right: 0;
+            margin-top: 15px;
+            margin-left: -13px;
+            background: white;
+            .transition( all, 0.5s, ease );
+        }
+    }
+    .navigation-toggle:hover {
+        border: 0;
+            &:before {
+                background: white;
+                box-shadow: 0 6px 0 white;
+            }
+            &:after {
+                background: white;
+            }
+    }
+    // Toggle Button Open State
+    .open & {
+        &.navigation-toggle {
+            background-color: @color-swatch3;
+            &:before {
+                margin-top: 21px;
+                background: white;
+                box-shadow: none;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+                .transition( all, 0.5s, ease );
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                width: 26px;
+                height: 3px;
+                top: 0;
+                left: 50%;
+                right: 0;
+                margin-top: 21px;
+                margin-left: -13px;
+                background: white;
+                box-shadow: none;
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                .transition( all, 0.5s, ease );
+            }
+        }
+    }
+    .navigation-body {
+        display: none;
+        .open & {
+            display: block;
+        }
+    }
+    .navigation-item {
+        width: 100%;
+    }
+}
